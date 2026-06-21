@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media print {
+  /* Sembunyikan semua elemen di luar struk */
+  body * {
+    visibility: hidden;
+  }
+  
+  /* Tampilkan hanya area struk dan isinya */
+  #printable-receipt, #printable-receipt * {
+    visibility: visible;
+  }
+  
+  /* Posisikan struk tepat di TENGAH kertas PDF (Horizontal & Vertikal) */
+  #printable-receipt {
+    position: absolute;
+    left: 50%;
+    top: 50%; /* Tarik ke tengah secara vertikal */
+    transform: translate(-50%, -50%); /* Kunci posisinya biar benar-benar center */
+    width: 90mm !important; 
+    max-width: 90mm !important;
+    padding: 5mm !important;
+    border: 1px dashed #ccc; /* Garis putus-putus biar estetik */
+  }
+
+  /* Perbesar ukuran font khusus saat diprint */
+  #printable-receipt p, 
+  #printable-receipt span, 
+  #printable-receipt div, 
+  #printable-receipt h2 {
+    font-size: 16px !important; 
+    line-height: 1.6 !important;
+    color: black !important;
+  }
+
+  /* Perbesar judul struk */
+  #printable-receipt h2 {
+    font-size: 22px !important;
+  }
+
+  @page {
+    margin: 0mm;
+  }
+}
