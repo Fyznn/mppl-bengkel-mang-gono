@@ -12,8 +12,8 @@ Proyek ini dikembangkan untuk memenuhi Tugas Besar mata kuliah **Manajemen Proye
 ---
 
 ## 👥 Tim Pengembang (Kelompok)
-* **Figo Immanuel Manuputty** ([@Fyznn](https://github.com/Fyznn)) — *Full Stack Developer*
-* **Yosafat Harazaki** — *Collaborator*
+* **Figo Immanuel Manuputty** ([@Fyznn](https://github.com/Fyznn)) — *Developer 1*
+* **Yosafat Harazaki** — *Developer 2*
 
 ---
 
