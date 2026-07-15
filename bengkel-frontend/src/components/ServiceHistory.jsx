@@ -16,7 +16,7 @@ const ServiceHistory = () => {
     setErrorMsg('');
     setHistoryData([]);
 
-    fetch(`http://bengkelmanggono.freehosting.dev/api/history/${platNomor}`)
+    fetch(`https://bengkelmanggono.freehosting.dev/api/history/${platNomor}`)
       .then((res) => res.json())
       .then((data) => {
         setIsLoading(false);
