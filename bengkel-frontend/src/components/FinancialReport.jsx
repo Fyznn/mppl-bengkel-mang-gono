@@ -10,7 +10,7 @@ const FinancialReport = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch('https://bengkelmanggono.freehosting.dev/api/report')
+    fetch('api/report')
       .then(res => res.json())
       .then(data => {
         if (data.success) {

@@ -14,7 +14,7 @@ const Cashier = () => {
   const [receiptData, setReceiptData] = useState(null);
 
   const fetchSpareParts = () => {
-    fetch('https://bengkelmanggono.freehosting.dev/api/spare-parts')
+    fetch('api/spare-parts')
       .then(res => res.json())
       .then(result => setSpareParts(result.data))
       .catch(err => console.error(err));
@@ -58,7 +58,7 @@ const Cashier = () => {
       executeCheckout(); // Kalau tunai, langsung simpan ke DB
     } else {
       // Kalau QRIS, panggil Midtrans dulu!
-      fetch('https://bengkelmanggono.freehosting.dev/api/get-snap-token', {
+      fetch('api/get-snap-token', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 
@@ -104,7 +104,7 @@ const Cashier = () => {
       items: cart.map(item => ({ spare_part_id: item.id, jumlah: item.qty }))
     };
 
-    fetch('https://bengkelmanggono.freehosting.dev/api/checkout', {
+    fetch('api/checkout', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify(payload)

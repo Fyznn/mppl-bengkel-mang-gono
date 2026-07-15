@@ -20,7 +20,7 @@ const InventoryList = () => {
   const [deleteConfirm, setDeleteConfirm] = useState({ isOpen: false, id: null, nama_barang: '' });
 
   const fetchSpareParts = () => {
-    fetch('https://bengkelmanggono.freehosting.dev/api/spare-parts')
+    fetch('api/spare-parts')
       .then((response) => response.json())
       .then((result) => {
         setSpareParts(result.data);
@@ -63,7 +63,7 @@ const InventoryList = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const url = editId ? `https://bengkelmanggono.freehosting.dev/api/spare-parts/${editId}` : 'https://bengkelmanggono.freehosting.dev/api/spare-parts';
+    const url = editId ? `api/spare-parts/${editId}` : 'api/spare-parts';
     const method = editId ? 'PUT' : 'POST';
 
     fetch(url, {
@@ -97,7 +97,7 @@ const InventoryList = () => {
 
   // Mengeksekusi penghapusan jika tombol "Ya, Hapus" diklik
   const executeDelete = () => {
-    fetch(`https://bengkelmanggono.freehosting.dev/api/spare-parts/${deleteConfirm.id}`, {
+    fetch(`api/spare-parts/${deleteConfirm.id}`, {
       method: 'DELETE',
       headers: { 'Accept': 'application/json' }
     })
