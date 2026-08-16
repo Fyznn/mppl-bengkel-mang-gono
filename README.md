@@ -47,10 +47,10 @@ Aplikasi ini dikembangkan menggunakan metodologi **Agile Scrum** yang diselesaik
   <summary><b>Klik untuk melihat daftar cuplikan layar</b></summary>
 
   - **Halaman Kasir & QRIS:**
-  <img width="1920" height="1020" alt="Screenshot 2026-08-16 124232" src="https://github.com/user-attachments/assets/5f4e9cd1-9936-46e8-916d-db978c6937a8" />
-  
+  <img width="1920" height="1020" alt="Screenshot 2026-08-16 124232" src="https://github.com/user-attachments/assets/a2ff7f90-772c-45bf-a2a3-a584bee4f6ac" />
+
   - **Struk Thermal:**
-  <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/a5591fd1-29d5-4aa4-8a17-6836678070ba" />
+  <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/aea5affa-5971-4599-bc45-358fcdfbfa5f" />
   
   - **Dashboard Laporan Keuangan:**
   <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/5e66666f-5926-4bdf-b648-2f533abfd6f5" />
